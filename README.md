@@ -5,8 +5,8 @@ This is a technical assessment for SCA Cloud School Assessment for Cohort 2.
 To containerize a flask web application into a docker container.
 
 # Prerequisites
-* Install Docker on your machine, [see installation guide here]()
-* Install Python 3.9, [see installation guide here]()
+* Install Docker on your machine, [see installation guide here](https://docs.docker.com/get-docker/)
+* Install Python 3.9, [see installation guide here](https://www.python.org/downloads/)
 * Working knowledge on how to use Docker
 * Basic understanding of how a flask application is structured
 
@@ -27,7 +27,7 @@ cd docker
 ```
 * Run the application
 ```python
-    python app.py
+   python app.py
 ```
 
 
@@ -37,7 +37,7 @@ cd docker
 # Docker Container 1
 * Build docker image
 ```bash
-    sudo docker build -t sca-cloud-image-1 .
+   sudo docker build -t sca-cloud-image-1 .
 ```
 
 
@@ -52,7 +52,7 @@ cd docker
 ![sca-cloud-image-1](https://drive.google.com/file/d/1kqWAyki4Vw-2-LBLbc8s5qMo8F3j2m-N/view?usp=drivesdk)
 * The docker container was built using the Dockerfile and the application in a folder called docker. In the docker folder, run;
 ```bash
-    sudo docker run --name sca-cloud-container-1 sca-cloud-image-1
+   sudo docker run --name sca-cloud-container-1 sca-cloud-image-1
 ```
 ![container-1](https://drive.google.com/file/d/1wmWI4aduFtyUVV2psOLzs9USRITrbR3c/view?usp=drivesdk)
 * Output of container 1
@@ -64,7 +64,7 @@ Welcome to SCA Cloud School Application, this is my first assessment
 ```
 * Build docker image
 ```bash
-    sudo docker build -t sca-cloud-final-image .
+   sudo docker build -t sca-cloud-final-image .
 ```
 
 
@@ -77,7 +77,7 @@ Successfully tagged sca-cloud-final-image:latest
 ```
 * Run the second container
 ```bash
-    sudo docker run --name sca-cloud-container sca-cloud-final-image
+   sudo docker run --name sca-cloud-container sca-cloud-final-image
 ```
 ![container-2](https://drive.google.com/file/d/1uz6FCFZQ7uJuPpsKbqcQD9DFfLNi9hHC/view?usp=drivesdk)
 * Output of Container 2
